@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
-<body>
-    <h1>Test</h1>
+<body class="red lighten-3" >
+        <h1 class="card-panel pink lighten-1">CSS Specificity
+        </h1>
+        <div class="card-panel pink accent-1">
+                <p class="flow-text">อะไรคือ Specificity? 
+                        <p>
+                            หากมี CSS-rules ที่ขัดแย้งกันสองกฎขึ้นไปซึ่งชี้ไปที่ 
+                            Element เดียวกัน เบราว์เซอร์จะทำตามข้อกำหนดบางอย่าง
+                            เพื่อพิจารณาว่ากฎข้อใดมีความ Specific มากก็จะชนะไป 
+                        </p>
+                        <p>
+                            ให้คิดว่า Specificity มีอันดับที่กำหนด style ว่าจะต้องใช้กับอะไร
+                        </p>
+                        <p>
+                            The universal selector จะมี specificity ที่ต่ำกว่า ID selectors
+                        </p>
+                        <div class="card-panel lime lighten-3">
+                            <p><strong>Note: </strong>Specificity เป็นหนึ่งในเหตุผลที่ทำให้ CSS-rules ไม่สามารถใช้กับ 
+                                Element ได้ในบางครั้ง อย่างที่ควรจะเป็น</p>
+                        </div>
+                </p>
+                <p class="flow-text">
+                    Example
+                    <div class="card-panel orange lighten-3"><p>h1 {background-color: yellow;}
+                        </p>
+                        <p>h1 {background-color: red;}</p></div>
+                    
+                            <p>the latter rule is always applied.</p>
+
+                </p>
+        </div>
+        <a class="btn-floating btn-large cyan pulse" href="https://numin123.github.io"><i class="material-icons">ฺBack</i></a>
 </body>
 </html>
