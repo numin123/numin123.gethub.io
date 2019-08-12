@@ -7,70 +7,82 @@
     <title>Assignment 2 CSS Framework By Numin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
 </head>
-<body class="red lighten-3" >        
-        <header class = "no-padding">
-            <div class="navbar-fixed">
-        <nav>
+
+<body class="red lighten-3">
+    <header class="no-padding">
+        <div class="navbar-fixed">
+            <nav>
                 <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo center">Assignment 2 CSS Framework<i class="material-icons">perm_contact_calendar</i></a>
-                  <ul class="right hide-on-med-and-down">
-                    <li><a href="https://www.google.co.th/"><i class="material-icons">search</i></a></li>
-                    <li><a href="https://numin123.github.io"><i class="material-icons">home</i></a></li>
-                    <li><a href="https://numin123.github.io/2page"><i class="material-icons">refresh</i></a></li>
-                    
-                    <li><a href="#!"><i class="material-icons">more_vert</i></a></li>
-                  </ul>
+                    <a href="#!" class="brand-logo center">Assignment 2 CSS Framework<i
+                            class="material-icons">perm_contact_calendar</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="https://www.google.co.th/"><i class="material-icons">search</i></a></li>
+                        <li><a href="https://numin123.github.io"><i class="material-icons">home</i></a></li>
+                        <li><a href="https://numin123.github.io/2page"><i class="material-icons">refresh</i></a></li>
+
+                        <li><a href="#!"><i class="material-icons">more_vert</i></a></li>
+                    </ul>
                 </div>
-        </nav></div></header>
-        
-        <div class="z-depth-2">
+            </nav>
+        </div>
+    </header>
+
+    <div class="z-depth-2">
         <h1 class="card-panel pink lighten-1">Assignment 2 CSS Framework
         </h1>
-        </div>            
-            <div class="z-depth-2">
-                    <div class="card-panel pink accent-1">
-                <h2>CSS Specificity</h2>
-                    <p class="flow-text">อะไรคือ Specificity?
-                        <p>
-                            เป็นวิธีการที่เบราว์เซอร์ตัดสินใจว่าค่าคุณสมบัติ CSS ใดที่เกี่ยวข้องกับองค์ประกอบมากที่สุด CSS ค่านั้นก็จะถูกนำไปใช้ 
-                        </p>
-                        <p>
-                            ให้คิดว่า Specificity มีกฎที่กำหนด style ว่าจะต้องใช้กับอะไร
-                        </p>
-                        <p>
-                            The universal selector จะมี specificity ที่ต่ำกว่า ID selectors
-                        </p>
-                    </p> 
-                        <div class="z-depth-2">
-                        <div class="card-panel lime lighten-3">
-                            <p><strong>Note: </strong>Specificity เป็นหนึ่งในเหตุผลที่ทำให้ CSS-rules ไม่สามารถใช้กับ 
-                                Element ได้ในบางครั้ง อย่างที่ควรจะเป็น</p>
-                        </div></div>
-                
-                <p class="flow-text">
-                    Example
-                    <div class="z-depth-2">
-                    <div class="card-panel orange lighten-3"><p>h1 {background-color: yellow;}
-                        </p>
-                        <p>h1 {background-color: red;}</p></div></div>
-                    
-                            <p>the latter rule is always applied.</p>
-
+    </div>
+    <div class="z-depth-2">
+        <div class="card-panel pink accent-1">
+            <h2>CSS Specificity</h2>
+            <p class="flow-text">อะไรคือ Specificity?
+                <p>
+                    หากมี CSS-rules ที่ขัดแย้งกันสองกฎขึ้นไปซึ่งชี้ไปที่
+                    Element เดียวกัน เบราว์เซอร์จะทำตามข้อกำหนดบางอย่าง
+                    เพื่อพิจารณาว่ากฎข้อใดมีความ Specific มากก็จะชนะไป
                 </p>
+                <p>
+                    ให้คิดว่า Specificity มีอันดับที่กำหนด style ว่าจะต้องใช้กับอะไร
+                </p>
+                <p>
+                    The universal selector จะมี specificity ที่ต่ำกว่า ID selectors
+                </p>
+            </p>
+            <div class="z-depth-2">
+                <div class="card-panel lime lighten-3">
+                    <p><strong>Note: </strong>Specificity เป็นหนึ่งในเหตุผลที่ทำให้ CSS-rules ไม่สามารถใช้กับ
+                        Element ได้ในบางครั้ง อย่างที่ควรจะเป็น</p>
+                </div>
+            </div>
+
+            <p class="flow-text">
+                Example
+                <div class="z-depth-2">
+                    <div class="card-panel orange lighten-3">
+                        <p>h1 {background-color: yellow;}
+                        </p>
+                        <p>h1 {background-color: red;}</p>
+                    </div>
+                </div>
+
+                <p>the latter rule is always applied.</p>
+
+            </p>
         </div>
-        </div>
-        
-        <div class="center-align">
-                <iframe width="720" height="415" src="https://www.youtube.com/embed/c0kfcP_nD9E?&autoplay=1" 
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+    </div>
+
+    <div class="center-align">
+        <iframe width="720" height="415" src="https://www.youtube.com/embed/c0kfcP_nD9E?&autoplay=1" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; 
                 picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="z-depth-2">
-                <div class="card-panel pink accent-1">
-        <a class="btn-floating btn-large cyan pulse" href="https://numin123.github.io">
-            <i class="material-icons">HOME</i></a></div></div>
-        <p class="center-align">Prepared by Numin Ngamngernwan</p>
+    </div>
+    <div class="z-depth-2">
+        <div class="card-panel pink accent-1">
+            <a class="btn-floating btn-large cyan pulse" href="https://numin123.github.io">
+                <i class="material-icons">HOME</i></a></div>
+    </div>
+    <p class="center-align">Prepared by Numin Ngamngernwan</p>
 </body>
+
 </html>
